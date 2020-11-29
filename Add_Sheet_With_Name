@@ -1,0 +1,4 @@
+Sub AddMeWithName()
+'Add worksheet with defined name in current workbook
+Sheets.Add.Name = "myNewSHeet"
+End Sub
