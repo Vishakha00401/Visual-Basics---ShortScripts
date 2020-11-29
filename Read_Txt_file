@@ -1,0 +1,6 @@
+'declare variable to store file path
+Dim fileReader As String
+'Target location where txt file is saved
+fileReader = My.Computer.FileSystem.ReadAllText("D:\Vish.txt")
+'Read content from txt file and display on message box
+MsgBox(fileReader)
