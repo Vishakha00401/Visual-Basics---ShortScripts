@@ -1,3 +1,4 @@
 # VB
-Visual Basic Codes/Sort the array or numeric data cells in asceding order
+Visual Basic Codes/Short_Scripts
 @Created by #VishakhaS
+CopyWrite by VMS
