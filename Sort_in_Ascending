@@ -1,0 +1,22 @@
+Sub Sort_Small_to_large()
+    'Activate the worksheet where ypu have the interger/data to be sort
+    Worksheets("Sheet1").Activate
+    'Select range of data cells
+    Range("B3:B9").Select
+    'Remove existing filters of data cells
+    ActiveWorkbook.Worksheets("Sheet1").Sort.SortFields.Clear
+    'Sort data in asceding order
+    ActiveWorkbook.Worksheets("Sheet1").Sort.SortFields.Add Key:=Range("B3"), _
+        SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:=xlSortNormal
+    With ActiveWorkbook.Worksheets("Sheet1").Sort
+        .SetRange Range("B3:B9")
+        .Header = xlNo
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    'Save workbook
+    Range("B3").Select
+    ActiveWorkbook.Save
+End Sub
