@@ -1,0 +1,4 @@
+Sub SheetAdd()
+'Add single worksheet in active workbook
+ActiveWorkbook.Sheets.Add
+End Sub
