@@ -1,0 +1,19 @@
+Sub Set_Name_to_worksheet_according_to_array()
+'Set vaiable to hold count of number of cells
+Dim sheets_count As Integer
+'Set variable to hold cell content to name new sheet
+Dim sheet_name As String
+'Set variable for counter
+Dim i As Integer
+'Specify the cell range and load count (Number of cells) into variable
+sheet_count = Range("V3:V19").Rows.Count
+'for loop starting from 1 to end i.e total number of cells speciafied in range
+For i = 1 To sheet_count
+'Set name to new sheet from specified cell range untill last
+  sheet_name = Sheets("mySheet").Range("A1:A7").Cells(i, 1).Value
+ 'Add new worksheet with new name until last
+  Worksheets.Add().Name = sheet_name
+  'Proceed counter to check if last cell countered
+Next i
+'Énd of loop
+End Sub
