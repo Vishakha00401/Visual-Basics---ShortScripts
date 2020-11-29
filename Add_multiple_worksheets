@@ -1,0 +1,4 @@
+Sub Add_multiple_worksheets()
+'add 5 worksheets to active workbook
+Sheets.Add Count:=5
+End Sub
