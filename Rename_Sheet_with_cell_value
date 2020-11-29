@@ -1,0 +1,5 @@
+Sub Rename_Sheet_with_cell_value()
+'Name the worksheet with cell data
+'Specify location/cell address in Range
+Sheets.Add.Name = Range("A1")
+End Sub
